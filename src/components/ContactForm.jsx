@@ -27,7 +27,7 @@ export default function ContactForm() {
     setResponseMessage("");
 
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch("http://localhost:5000/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
